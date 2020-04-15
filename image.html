@@ -45,10 +45,18 @@
             smoothTolerance=".01"
             smoothThreshold="5"
     >
+        <a-entity light="type: directional; color: #EEE; intensity: 10" position="-1 3 2"></a-entity>
+        <a-box position="1 0 0" rotation="0 0 0" color="#FF0000"></a-box>
+        <a-box position="0 1 0" rotation="0 0 0" color="#00FF00"></a-box>
+        <a-box position="0 0 1" rotation="0 0 0" color="#0000FF"></a-box>
+        <a-box position="-1 0 0" rotation="0 0 0" color="#FF0000"></a-box>
+        <a-box position="0 -1 0" rotation="0 0 0" color="#00FF00"></a-box>
+        <a-box position="0 0 -1" rotation="0 0 0" color="#0000FF"></a-box>
         <a-entity
-                gltf-model="models/matilda/scene.gltf"
-                scale="1 1 1"
-                position="50 0 0"
+                gltf-model="models/flying_bird/scene.gltf"
+                scale="10 10 10"
+                position="0 1 0"
+                animation-mixer
         >
         </a-entity>
     </a-nft>
